@@ -3,9 +3,9 @@
  * Created by: rt (@qj9z on Discord)
  * GitHub: https://github.com/r-tws/offsets
  * Roblox Version: version-6776addb8fbc4d17
- * Dump Time: 2026-03-31 19:53:35
- * Time Taken: 4052 ms (4.052000 seconds)
- * Total Offsets: 297
+ * Dump Time: 2026-03-31 20:52:08
+ * Time Taken: 3909 ms (3.909000 seconds)
+ * Total Offsets: 339
  */
 
 #pragma once
@@ -24,6 +24,11 @@ namespace offsets {
         inline constexpr uintptr_t Offset = 0xF4;
     }
 
+    namespace Attachment {
+        inline constexpr uintptr_t CFrameX = 0x0;
+        inline constexpr uintptr_t Visible = 0x6;
+    }
+
     namespace BasePart {
         inline constexpr uintptr_t CastShadow = 0xF5;
         inline constexpr uintptr_t Color3 = 0x194;
@@ -34,6 +39,12 @@ namespace offsets {
         inline constexpr uintptr_t RootPriority = 0x20;
         inline constexpr uintptr_t Shape = 0x1B1;
         inline constexpr uintptr_t Transparency = 0xF0;
+    }
+
+    namespace BillboardGui {
+        inline constexpr uintptr_t Active = 0xD;
+        inline constexpr uintptr_t AlwaysOnTop = 0x6;
+        inline constexpr uintptr_t Enabled = 0xD;
     }
 
     namespace BloomEffect {
@@ -67,6 +78,10 @@ namespace offsets {
         inline constexpr uintptr_t OverlayTextureId = 0x140;
     }
 
+    namespace ClickDetector {
+        inline constexpr uintptr_t MaxActivationDistance = 0x100;
+    }
+
     namespace DataModel {
         inline constexpr uintptr_t CreatorId = 0x188;
         inline constexpr uintptr_t GameId = 0x190;
@@ -77,9 +92,21 @@ namespace offsets {
         inline constexpr uintptr_t Workspace = 0x178;
     }
 
+    namespace Decal {
+        inline constexpr uintptr_t Face = 0xE8;
+        inline constexpr uintptr_t Transparency = 0x0;
+        inline constexpr uintptr_t ZIndex = 0x30;
+    }
+
     namespace FakeDataModel {
         inline constexpr uintptr_t Pointer = 0x795A0D8;
         inline constexpr uintptr_t RealDataModel = 0x1C0;
+    }
+
+    namespace Fire {
+        inline constexpr uintptr_t Enabled = 0xD;
+        inline constexpr uintptr_t Heat = 0xE8;
+        inline constexpr uintptr_t Size = 0xF0;
     }
 
     namespace GuiBase2D {
@@ -191,7 +218,7 @@ namespace offsets {
 
     namespace LocalScript {
         inline constexpr uintptr_t Bytecode = 0x1A8;
-        inline constexpr uintptr_t Hash = 0x1B8;
+        inline constexpr uintptr_t Hash = 0xE8;
     }
 
     namespace MaterialColors {
@@ -233,6 +260,13 @@ namespace offsets {
         inline constexpr uintptr_t InputObject = 0x110;
     }
 
+    namespace ParticleEmitter {
+        inline constexpr uintptr_t Enabled = 0xD;
+        inline constexpr uintptr_t Rate = 0x258;
+        inline constexpr uintptr_t RotSpeed = 0x0;
+        inline constexpr uintptr_t SpreadAngleX = 0x0;
+    }
+
     namespace Player {
         inline constexpr uintptr_t AccountAge = 0x31C;
         inline constexpr uintptr_t Character = 0x398;
@@ -251,6 +285,13 @@ namespace offsets {
         inline constexpr uintptr_t LocalPlayer = 0x130;
     }
 
+    namespace PointLight {
+        inline constexpr uintptr_t Brightness = 0xD8;
+        inline constexpr uintptr_t Enabled = 0xD;
+        inline constexpr uintptr_t Range = 0xF0;
+        inline constexpr uintptr_t Shadows = 0x0;
+    }
+
     namespace Primitive {
         inline constexpr uintptr_t AssemblyAngularVelocity = 0xFC;
         inline constexpr uintptr_t AssemblyCenterOfMass = 0x108;
@@ -258,7 +299,7 @@ namespace offsets {
         inline constexpr uintptr_t AssemblyMass = 0x114;
         inline constexpr uintptr_t CFrame = 0xC0;
         inline constexpr uintptr_t CollisionGroup = 0x18;
-        inline constexpr uintptr_t CustomPhysicalProperties = 0x8D;
+        inline constexpr uintptr_t CustomPhysicalProperties = 0xBF;
         inline constexpr uintptr_t Material = 0x22E;
         inline constexpr uintptr_t Orientation = 0xC0;
         inline constexpr uintptr_t Position = 0xE4;
@@ -319,11 +360,36 @@ namespace offsets {
         inline constexpr uintptr_t SunTextureId = 0x230;
     }
 
+    namespace Sound {
+        inline constexpr uintptr_t Looped = 0x6;
+        inline constexpr uintptr_t PlaybackSpeed = 0x130;
+        inline constexpr uintptr_t Playing = 0x6;
+        inline constexpr uintptr_t RollOffMaxDistance = 0x134;
+        inline constexpr uintptr_t RollOffMinDistance = 0x138;
+        inline constexpr uintptr_t TimePosition = 0x0;
+        inline constexpr uintptr_t Volume = 0x144;
+    }
+
     namespace SpecialMesh {
         inline constexpr uintptr_t MeshId = 0x108;
         inline constexpr uintptr_t Offset = 0xD0;
         inline constexpr uintptr_t Scale = 0xDC;
         inline constexpr uintptr_t TextureId = 0x130;
+    }
+
+    namespace SpotLight {
+        inline constexpr uintptr_t Angle = 0xF0;
+        inline constexpr uintptr_t Brightness = 0xD8;
+        inline constexpr uintptr_t Enabled = 0xD;
+        inline constexpr uintptr_t Face = 0xF4;
+        inline constexpr uintptr_t Range = 0xF8;
+        inline constexpr uintptr_t Shadows = 0x6;
+    }
+
+    namespace SurfaceGui {
+        inline constexpr uintptr_t Active = 0xD;
+        inline constexpr uintptr_t AlwaysOnTop = 0x6;
+        inline constexpr uintptr_t Enabled = 0xD;
     }
 
     namespace TaskScheduler {
@@ -420,6 +486,18 @@ namespace offsets {
         inline constexpr uintptr_t Pointer = 0x7510A58;
         inline constexpr uintptr_t RenderView = 0xB40;
         inline constexpr uintptr_t ViewMatrix = 0x130;
+    }
+
+    namespace Weld {
+        inline constexpr uintptr_t Enabled = 0xD;
+        inline constexpr uintptr_t Part0 = 0x70;
+        inline constexpr uintptr_t Part1 = 0x140;
+    }
+
+    namespace WeldConstraint {
+        inline constexpr uintptr_t Enabled = 0xD;
+        inline constexpr uintptr_t Part0 = 0x70;
+        inline constexpr uintptr_t Part1 = 0xD0;
     }
 
     namespace Workspace {
