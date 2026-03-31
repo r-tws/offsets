@@ -6,6 +6,7 @@
  * Dump Time: 2026-03-31 20:52:08
  * Time Taken: 3909 ms (3.909000 seconds)
  * Total Offsets: 339
+ * SOME OFFSETS WILL BE INCORRECT !!! FIXES SOON
  */
 
 #pragma once
@@ -25,7 +26,7 @@ namespace offsets {
     }
 
     namespace Attachment {
-        inline constexpr uintptr_t CFrameX = 0x0;
+        // inline constexpr uintptr_t CFrameX = 0x0;
         inline constexpr uintptr_t Visible = 0x6;
     }
 
